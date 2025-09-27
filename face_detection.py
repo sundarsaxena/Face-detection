@@ -16,6 +16,7 @@ while True:
     for(x,y,w,h) in faces:
         cv2.rectangle(video_data,(x,y),(x+w,y+h),(0,255,0),2)
     cv2.imshow("video_live",video_data)
-    if cv2.waitKey(10) == ord("p"):         
+    if cv2.waitKey(10) == ord("p"):         ## for camera of press p
         break                                  #
+
 video_cap.release()
